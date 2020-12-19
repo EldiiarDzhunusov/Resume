@@ -1,0 +1,312 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%     \lastupdated
+%    
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Eldiiar}{Dzhunusov}{ \urlstyle{same}\href{https://github.com/EldiiarDzhunusov}{ GitHub }|\href{https://www.linkedin.com/in/eldiiardzhunusov/}{ LinkedIn }|\href{https://leetcode.com/EldiiarDzhunusov/}{ LeetCode }|\href{https://codeforces.com/profile/Nullius}{ CodeForces }
+
+\\\href{https://eldiiardzhunusov.github.io/}{ EldiiarDzhunusov.github.io }| +996778012053 |
+\href{mailto:eldiiar.dzhunusov_2022@ucentralasia.org}{eldiiar.dzhunusov\_2022@ucentralasia.org}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.40\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{\href{https://ucentralasia.org/}{University of Central Asia}}\\
+\descript{BS in Computer Science}
+\location{Naryn, Kyrgyzstan}
+\location{ Acceptance Rate: 4.3\%}
+September, 2018 - Expected July, 2022\\
+Member of Coding Contest Club
+
+
+\sectionsep
+
+\subsection{\href{https://70.edubishkek.kg/o-nas/}{School-gymnasium \#70 \newline
+educational complex}}
+\descript{Focus on Mathematics}
+\location{Bishkek, Kyrgyzstan}
+\location{Top 5 School in Kyrgyzstan}
+Graduated in June, 2016\\
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+
+\subsection{Technical Skills}
+Java \textbullet{}  Python \textbullet{}  C Language %\textbullet{} C++ 
+\textbullet{} OOP
+\textbullet{} Algorithms
+
+\textbullet{} Algorithm Analysis \textbullet{} 
+Git\textbullet{} Linux \textbullet{}  HTML \textbullet{} CSS \textbullet{} Bash
+%\textbullet{} Docker
+\textbullet{} SQL \textbullet{} Unified Modeling Language(UML)
+\sectionsep
+
+\subsection{Soft Skills}
+ Team Player \textbullet{} Problem-Solving Thinking \textbullet{} Time Management \textbullet{} Flexibility \textbullet{} Public Speaking \textbullet{} Leadership \textbullet{} Trilingual Communication\\ (English, Russian, Kyrgyz)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+\runsubsection{\href{https://ucentralasia.org/}{University of Central Asia}}
+\descript{| Computer Science Teaching Assistant }
+\location{October 2020 - Present | Naryn, Kyrgyzstan}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Student tutoring in the extra classes\\ in "C" programming language.
+\item Code Review
+\item Curriculum development for the extra classes.
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://hlebnasushny.ru/}{Hleb Nasushny}}
+\descript{| Restaurant Attendant }
+\location{June 2019 – August 2020 | Moscow, Russia}
+\begin{tightemize}
+\item Improved customer service by implementing a Plazius payment system.
+% \item Assisted customers with food selection, inquiries and order customization requests.
+\item Trained and served as a mentor for new employees.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{\href{http://image-cosmetika.ru/?page_id=2}{Aliyans BSM}}
+\descript{| Senior Sales Manager}
+\location{January 2018 – August 2018 | Bishkek, Kyrgyzstan}
+\begin{tightemize}
+\item Developed an ability to read individuals to identify needs and interests and adapt sales techniques accordingly.
+% Google Facebook Microsoft Netflix
+\item Built and led a team of motivated junior sales managers.
+\end{tightemize}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.59\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TECHNICAL PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Projects}
+
+
+\runsubsection{\href{https://github.com/EldiiarDzhunusov/Minesweeper}{Minesweeper}}
+\descript{| Game}
+\location{November, 2020 | Bishkek, Kyrgyzstan}
+\sectionsep
+\begin{tightemize}
+\item Built a Minesweeper game using Java language and JavaFX library.
+\item Developed an algorithm  to not lose the game on the first click.
+\item Increased efficiency of search by applying recursive approach.
+
+\end{tightemize}
+
+\sectionsep
+
+
+
+
+\runsubsection{\href{https://github.com/EldiiarDzhunusov/EldiiarDzhunusov.github.io}{eldiiardzhunusov.github.io}}
+\descript{| Personal Website}
+\location{May, 2020 | Bishkek, Kyrgyzstan}
+\begin{tightemize}
+\item Built a personal website using HTML,CSS,PHP and Bootstrap.
+\item Configured Back-End on Heroku server.
+\item Debugged an error that was causing a slow response by 17\%.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://github.com/EldiiarDzhunusov/COMP1001-Calculator}{Calculator}}
+\descript{| Software}
+\location{April, 2019 | Naryn, Kyrgyzstan}
+\begin{tightemize}
+\item Built advanced calculator using Python 3 and Tkinter, Matplotlib, and Numpy libraries.
+\item Applied calculation of derivatives, area, volume, and simple math.
+\item Implemented a plotting of trigonometric and polynomial functions.
+
+\end{tightemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Object Oriented Programming\textbullet{}
+Computer Systems \textbullet{}
+Web Technologies \textbullet{}
+Computer Architecture \textbullet{}
+Calculus II \textbullet{}
+Linear Algebra \textbullet{}
+Digital Logical Design\textbullet{}
+Software Engineering \textbullet{}
+Database Management Systems \textbullet{}
+Data Structure and Algorithms \textbullet{}
+Discrete Mathematics \textbullet{}
+Intro to Computer Science \textbullet{}
+Calculus I \textbullet{}
+Fundamentals of Programming 
+\sectionsep
+
+
+\subsection{External}
+
+
+
+\href{https://www.coursera.org/account/accomplishments/verify/BBJ82ES293NF}{Greedy Algorithms, Minimum Spanning Trees, and
+Dynamic Programming}\\
+{\footnotesize \textit{\textbf{| Stanford Online}}} \\
+
+\href{https://www.coursera.org/account/accomplishments/verify/8Y6GMJJ42MUR}{Graph Search, Shortest Paths, and Data Structures}{\footnotesize \textit{\textbf{| Stanford Online}}} \\
+\href{https://www.coursera.org/account/accomplishments/verify/4HBNSGEQ6TZ4}{Shortest Paths Revisited, NP-Complete Problems
+and What To Do About Them}
+{\footnotesize \textit{\textbf{| Stanford Online}}} \\
+
+\href{https://www.coursera.org/account/accomplishments/verify/9NLW95QA5L65}{Divide and Conquer, Sorting and Searching, and Randomized Algorithms} \\
+{\footnotesize \textit{\textbf{| Stanford Online}}} \\
+
+\href{https://auca.kg/en/cec_preparatorycourses/66/}{Mathematics}
+{\footnotesize \textit{\textbf{| American University of Central Asia}}} \\
+
+\href{https://www.akdn.org/our-agencies/university-central-asia/uca-pre-university-education}{Winter Upgrading Programme} 
+{\footnotesize \textit{\textbf{| University of Central Asia}}} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certificates and Awards} 
+\begin{tabular}{rll}
+
+2020 & \href{https://drive.google.com/file/d/1qWr5qT-tAZjzCQhJVwCS_91mZGf8PeEm/view?usp=sharing}{Absolute Winner in Kyrgyzstan},\\& \href{https://drive.google.com/file/d/1qWr5qT-tAZjzCQhJVwCS_91mZGf8PeEm/view?usp=sharing}{Absolute Winner in the nomination "Industrial Internet"},\\
+&\href{https://drive.google.com/file/d/1qWr5qT-tAZjzCQhJVwCS_91mZGf8PeEm/view?usp=sharing}{3rd/5000 Place Among all Nominations}\\
+&In \href{https://olymp.digitaleconomy.world/en/}{Digital Economy International Olympiad} \space| Moscow, Russia\\
+2020& ICPC Kyrgyzstan Participant\\
+
+2019&\href{https://drive.google.com/file/d/1oHNS00dwOLS9y1tmq42F8RWxjM2WjFL0/view?usp=sharing}{Hackaton } - \href{https://dtca.kg/}{Digital Transformation in Central Asia} | Bishkek, Kyrgyzstan\\
+
+2019& \href{https://drive.google.com/file/d/1nfR0Lww5Qxti6asNj6nNwK0REmB7b0E8/view?usp=sharing}{The Fourth Central Asian CDF Tournament}| Dushanbe, Tajikistan\\
+
+2019& \href{https://drive.google.com/file/d/1nmrnoNYaSuMe-eunNoyV0LAmya0OgE-D/view?usp=sharing}{Model United Nations Conference} \space | Tashkent, Uzbekistan\\
+
+2019& \href{https://drive.google.com/file/d/1o-GMVCzRXZHLrqYimTdKvgOYd2RdAMj_/view?usp=sharing}{Model United Nations Conference} \space | Khorog, Tajikistan\\
+
+2017& \href{https://drive.google.com/file/d/1o7lv1Rfxlw0AxtvmmHWzMXZlWjPb8xUj/view?usp=sharing}{Certificate of Appreciation} by University of Central Asia\\
+
+2016& \href{https://drive.google.com/file/d/1o5RlENDFXKvinzGZUYTIfz6aq-q7dEv1/view?usp=sharing}{Certificate of Recognition} by High School \space | Bishkek, Kyrgyzstan\\
+2015& 1st place in Debate Tournament \space | Bishkek, Kyrgyzstan\\
+2015& 3rd place in Teenagers in Free Enterprise(TIFE) \space | Bishkek, Kyrgyzstan\\
+
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
